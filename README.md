@@ -1,3 +1,60 @@
+# PGOLD Backend Assessment
+
+A secure Laravel API for crypto & gift card exchange.
+
+## 🚀 Setup
+```bash
+git clone https://github.com/Thesleekcoder/pgold-backend-assessment.git
+cd pgold-backend-assessment
+composer install
+cp .env.example .env
+php artisan key:generate
+touch database/database.sqlite
+php artisan migrate --seed
+php artisan serve
+
+
+## API Endpoints
+
+### Authentication
+- `POST /api/register` – Create a new account  
+- `POST /api/verify-email` – Verify email with 6-digit OTP  
+- `POST /api/login` – Sign in and get auth token  
+### Protected Routes (require `Authorization: Bearer <token>`)
+- `GET /api/home` – Get user dashboard (wallet, quick actions)  
+- `POST /api/calculate-rate` – Calculate crypto/gift card exchange rate 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
